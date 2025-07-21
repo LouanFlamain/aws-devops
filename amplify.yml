@@ -1,4 +1,10 @@
 version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - pip3 install --user pipenv
+        - amplifyPush --simple
 frontend:
   phases:
     preBuild:
